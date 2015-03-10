@@ -7,7 +7,7 @@ public class Taximetro {
 		
 		if(ehBandeiraDois(viagem))
 			band = new BandeiraDois();
-		if(ehBandeiraUm(viagem))
+                else // bandeira um
 			band = new BandeiraUm();
 		
 		return band.calcularPreco(viagem);
